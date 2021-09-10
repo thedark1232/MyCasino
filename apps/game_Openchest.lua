@@ -254,7 +254,12 @@ local function roll(Huk_urpoka)
 		--выбрать случайный приз в таблице
 		npu3oBoe_3Ha4eHue_paHgoMa = math.random(1, BCero_u3o6paJeHuu_npegMeToB_B_Ta6JIuce_JeJIe3Horo_keuca)
 		--проверка приза по лвл игрока
-		if Ta6JIuca_rolla[npu3oBoe_3Ha4eHue_paHgoMa][2] <= Ta6JIuca_JIoroB_urpoka["lvl_urpoka"] then npu3_nogXoguT_no_lvl_urpoka = true end
+		if Ta6JIuca_rolla[npu3oBoe_3Ha4eHue_paHgoMa][2] <= Ta6JIuca_JIoroB_urpoka["lvl_urpoka"] then
+			npu3_nogXoguT_no_lvl_urpoka = true
+		else
+			npu3_nogXoguT_no_lvl_urpoka = false
+		end
+		for Ta6JIuca_rolla[
 		--если приз подходит по лвл
 		if npu3_nogXoguT_no_lvl_urpoka then
 			--подсчет ожидаемой выдачи приза
@@ -277,6 +282,7 @@ local function roll(Huk_urpoka)
 					if noJIy4uJIocb_BblToJIKHyTb then
 						npu3_ecTb_B_HaJIu4uu = true
 					else
+						npu3_ecTb_B_HaJIu4uu = false
 						--chat.say("§6ветвление на ошибку положить приз в сундук")
 						--chat.say("§6" ..Ta6JIuca_rolla[npu3oBoe_3Ha4eHue_paHgoMa][3])
 						--chat.say("§6" .. tostring(koJIu4ecTBo_npu3a_B_Me))

@@ -259,7 +259,6 @@ local function roll(Huk_urpoka)
 		else
 			npu3_nogXoguT_no_lvl_urpoka = false
 		end
-		for Ta6JIuca_rolla[
 		--если приз подходит по лвл
 		if npu3_nogXoguT_no_lvl_urpoka then
 			--подсчет ожидаемой выдачи приза

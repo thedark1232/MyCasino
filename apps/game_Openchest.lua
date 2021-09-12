@@ -251,6 +251,8 @@ local function roll(Huk_urpoka)
 	if diamond.getStackInSlot(108) ~= nil then diamond.pushItem("DOWN", 108, 64) end
 	--просчет приза
 	repeat
+		npu3_ecTb_B_HaJIu4uu = false
+		npu3_nogXoguT_no_lvl_urpoka = false
 		--выбрать случайный приз в таблице
 		npu3oBoe_3Ha4eHue_paHgoMa = math.random(1, BCero_u3o6paJeHuu_npegMeToB_B_Ta6JIuce_JeJIe3Horo_keuca)
 		--проверка приза по лвл игрока
